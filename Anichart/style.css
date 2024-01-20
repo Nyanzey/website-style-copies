@@ -1,0 +1,71 @@
+body
+{
+    background-color: rgb(237,241,245);
+    margin: 0px;
+}
+
+#main-header
+{
+    background-color: rgb(43,45,66);
+    height: 250px;
+    width: 100%;
+}
+
+#logo
+{
+    width: 65px;
+    height: auto;
+}
+
+#other-selection
+{
+    width: fit-content;
+    height: fit-content;
+}
+
+.nav-bar
+{
+    height: 40%;
+    color: aliceblue;
+    display: grid;
+    padding-top: 35px;
+    margin-left: 20%;
+    margin-right: 20%;
+    grid-template-columns: max-content max-content max-content;
+    column-gap: 10%;
+}
+
+#seasons-selection
+{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    column-gap: 5%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.season-lin-wrapper
+{
+    text-align: center;
+}
+
+a.season-link
+{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 30px;
+}   
+
+.season-link-subtext
+{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+a.other-link
+{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 50px;
+}  
