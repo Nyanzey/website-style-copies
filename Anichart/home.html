@@ -59,6 +59,9 @@
             </div>
         </div>
     </div>
+
+    
+
     <div class="card">
         <div class="card-left">
             <div class="card-banner">
@@ -112,16 +115,67 @@
                     </div>
                 </div>
                 <div class="description">
-                    They say whatever doesn’t kill you makes you stronger, but that’s not the case 
-                    for the world’s weakest hunter Sung Jinwoo. After being brutally slaughtered 
+                    They say whatever doesn't kill you makes you stronger, but that's not the case 
+                    for the world's weakest hunter Sung Jinwoo. After being brutally slaughtered 
                     by monsters in a high-ranking dungeon, Jinwoo came back with the System, 
-                    a program only he could see, that’s leveling him up in every way. Now, he’s 
+                    a program only he could see, that's leveling him up in every way. Now, he's 
                     inspired to discover the secrets behind his powers and the dungeon that spawned them.
                 </div>
                 <div class="tag-info">
+                    <h1 class="tag-text">action</h1>
+                    <h1 class="tag-text">adventure</h1>
+                    <h1 class="tag-text">leveling</h1>
+                    <div class="options">
+                        <img class="broadcaster-icon" src="https://cdn-icons-png.flaticon.com/512/107/107078.png" alt="">
+                    </div>
+                </div>
+                <div class="options-collapse">
+                    <div class="options-collapse-section">
+                        <div class="options-icon-wrapper">
+                            <img class="options-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Eo_circle_green_checkmark.svg/1200px-Eo_circle_green_checkmark.svg.png" alt="">
+                        </div>
+                        <h1 class="options-text">Watching</h1>
+                    </div>  
                     
+                    <div class="options-collapse-section">
+                        <div class="options-icon-wrapper">
+                            <img class="options-icon" src="https://cdn-icons-png.flaticon.com/512/5184/5184592.png" alt="">
+                        </div>
+                        <h1 class="options-text">Maybe Watching</h1>
+                    </div>  
+                    
+                    <div class="options-collapse-section">
+                        <div class="options-icon-wrapper">
+                            <img class="options-icon" src="https://cdn-icons-png.flaticon.com/512/9972/9972749.png" alt="">
+                        </div>
+                        <h1 class="options-text">Not Watching</h1>
+                    </div>
                 </div>
         </div>
     </div>
+
+    <script>
+        var optionsList = document.querySelectorAll(".options");
+
+        optionsList.forEach(options => {
+            var optionsCollapse = options.parentElement.nextElementSibling;
+
+            options.addEventListener('mouseover', function() {
+                optionsCollapse.style.display = 'grid';
+            });
+            
+            options.addEventListener('mouseout', function() {
+                optionsCollapse.style.display = 'none';
+            });
+
+            optionsCollapse.addEventListener('mouseover', function() {
+                optionsCollapse.style.display = 'grid';
+            });
+
+            optionsCollapse.addEventListener('mouseout', function() {
+                optionsCollapse.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
