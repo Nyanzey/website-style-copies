@@ -1,6 +1,6 @@
 body
 {
-    background-color: rgb(237,241,245);
+    background-color: rgb(19,23,29);
     margin: 0px;
 }
 
@@ -8,12 +8,13 @@ body
 {
     background-color: rgb(43,45,66);
     height: 250px;
+    display: block;
 }
 
 #logo
 {
     width: 65px;
-    height: auto;
+    height: 70px;
 }
 
 #other-selection
@@ -31,9 +32,9 @@ body
     color: aliceblue;
     display: grid;
     padding-top: 35px;
-    margin-left: 20%;
-    margin-right: 20%;
-    grid-template-columns: 0.5fr 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10%;
 }
 
@@ -60,6 +61,7 @@ a.season-link
 
 .link-subtext
 {
+    text-align: center;
     font-weight: normal;
     font-size: 15px;
     margin-top: 0;
@@ -83,6 +85,7 @@ a.other-link
     width: fit-content;
     height: fit-content;
     display: grid;
+    border-radius: 5px;
     background-color: rgb(31,35,45);
     grid-template-columns: max-content max-content ;
 }
@@ -308,4 +311,71 @@ a.other-link
     background-color: skyblue;
     border-radius: 3px;
     color: black
+}
+
+#card-list
+{
+    position: absolute;
+    top: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: fit-content;
+}
+
+.section-header
+{
+    color: aliceblue;
+    background-color: rgb(43,45,66);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-header-title
+{
+
+}
+
+.section-header-links
+{
+    display: flex;
+    justify-content: right;
+}
+
+.header-link-icon
+{
+    width: 50px;
+    height: auto;
+}
+
+.header-link-wrapper
+{
+    display: grid;
+    width: 240px;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card-grid
+{
+    display: grid;
+    gap: 20px;
+}
+
+@media (min-width: 650px){
+    .card-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1300px){
+    .card-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1950px){
+    .card-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
